@@ -18,6 +18,6 @@ public class GreetingResource {
                 .y(1337)
                 .build();
 
-        return String.format("hello my friend, x: %d, y: %d. Sum is bla HANS en MICHIEL: %d", point.getX(), point.getY(), point.getX() + point.getY() );
+        return String.format("hello my friend, x: " + point.getX() );
     }
 }
