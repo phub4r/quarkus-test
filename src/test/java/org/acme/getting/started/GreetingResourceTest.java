@@ -22,7 +22,7 @@ public class GreetingResourceTest {
           .when().get("/hello")
           .then()
              .statusCode(200)
-             .body(is("hello my friend, x: " + point.getX() ));
+             .body(is("FAIL hello my friend, x: " + point.getX() ));
     }
 
 }
