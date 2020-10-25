@@ -6,17 +6,13 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 @Path("/hello")
-public class GreetingResource {
+public class Todo {
 
     private Point point;
 
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public String hello() {
-        point = Point.builder()
-                .x(42)
-                .y(1337)
-                .build();
 
         return String.format("hello my friend, x: " + point.getX() );
     }
