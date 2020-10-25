@@ -11,8 +11,13 @@ public class Todo {
     private Point point;
 
     @GET
-    @Produces(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
+
+        point = Point.builder()
+                .x(42)
+                .y(1337)
+                .build();
 
         return String.format("hello my friend, x: " + point.getX() );
     }
