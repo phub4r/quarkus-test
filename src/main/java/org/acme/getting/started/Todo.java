@@ -14,6 +14,6 @@ public class Todo {
     @Produces(MediaType.APPLICATION_JSON)
     public String hello() {
 
-        return String.format("hello my friend, x: " + point.getX() );
+        return String.format("Hello my friend, x: " + point.getX() );
     }
 }
